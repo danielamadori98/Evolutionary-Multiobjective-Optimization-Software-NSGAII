@@ -1,4 +1,4 @@
-# Evolutionary-Multiobjective-Optimization-Software-NSGAII
+# Evolutionary Multiobjective Optimization Software NSGAII
 
 
 plot "output_zdt1_P100_M033/hyperstats.out" u ($1*2.5):2 w lp, "output_zdt1_P040_M033/hyperstats.out" u 1:2 w lp, "output_zdt1_P200_M033/hyperstats.out" u ($1*5):2 w lp
