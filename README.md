@@ -11,10 +11,3 @@ This report investigates the application of the nondominated sorting genetic alg
 
 Multiobjective evolutionary algorithms (MOEAs) play a crucial role in solving complex optimization problems with multiple conflicting objectives. This report focuses on the NSGA-II, a nondominated sorting-based MOEA that addresses computational complexity, nonelitism, and sharing parameter issues commonly associated with such algorithms.
 The experiments are designed to systematically explore different combinations of population size and mutation rate. The ZD4 problem serves as the benchmark for evaluating the algorithm's performance. The key metric used for assessment is the hypervolume, providing a quantitative measure of the algorithm's ability to balance exploration and exploitation.
-
-## TODO
-
-plot "output_zdt1_P100_M033/hyperstats.out" u ($1*2.5):2 w lp, "output_zdt1_P040_M033/hyperstats.out" u 1:2 w lp, "output_zdt1_P200_M033/hyperstats.out" u ($1*5):2 w lp
-
-./nsga2r 0.92 < input_ztd4/P040_M005.in && mv *.out output_zdt4/P040_M005/
-plot "P100_M010/hyperstats.out" u ($1*2.5):2 w lp, "P040_M010/hyperstats.out" u 1:2 w lp, "P200_M010/hyperstats.out" u ($1*5):2 w lp
